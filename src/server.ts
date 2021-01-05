@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const app = express();
 
-const apiKey = "36cf96d5b76bdafa58579914ab631a00";
+const apiKey = "your API key goes here";
 
 // Allows connection to the CSS file
 app.use(express.static("public"));
