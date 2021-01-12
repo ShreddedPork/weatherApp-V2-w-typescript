@@ -1,9 +1,12 @@
+require('dotenv').config();
+
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 const app = express();
 
-const apiKey = "your API key goes here";
+const apiKey = process.env.APIKEY;
 
 // Allows connection to the CSS file
 app.use(express.static("public"));
